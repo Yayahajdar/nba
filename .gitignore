@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+ 
+data/raw/*.json
+data/raw/*.csv
+data/raw/*.db
+data/raw/*.jsonl
+
+ 
+rapport_rgpd.html
+rapport_rgpd.json
+
+# Temporary files
+*.tmp
+*.log
+*.md
