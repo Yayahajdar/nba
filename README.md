@@ -59,3 +59,34 @@ curl -X POST -H "X-API-Key: nba" http://localhost:8000/run-etl
 ```
 
 ## Structure du projet
+
+## Structure du projet
+
+nba_etl/
+├── extract_ .py          # Scripts d'extraction
+├── transform.py          # Transformation des données
+├── load_ .py            # Chargement vers les bases
+├── main.py              # API FastAPI
+├── models.py            # Modèles de données
+├── requirements.txt     # Dépendances
+└── data/raw/           # Données extraites
+
+
+## API Endpoints
+
+- `GET /players` - Liste des joueurs
+- `GET /teams` - Liste des équipes
+- `GET /games` - Liste des matchs
+- `POST /run-etl` - Lancer le pipeline ETL
+- `GET /rgpd/info` - Informations RGPD
+
+## Technologies
+
+- **Backend**: Python 3.11+, FastAPI
+- **Bases de données**: PostgreSQL, MongoDB
+- **Traitement**: Pandas, SQLAlchemy
+- **Web scraping**: BeautifulSoup4
+- **Documentation**: Markdown
+
+
+
